@@ -1,0 +1,32 @@
+# basic cal loop
+
+ans = "y"
+
+while ans == "y":
+    a = float(input("Enter 1st number:"))
+    b = float(input("Enter 2nd number:"))
+
+    operator = input("Choose an operator (+,-,*,/):")
+    
+    if operator == "+":
+       print("Add:-", a + b)
+  
+    elif operator == "-":
+       print("Sub:-", a - b)
+ 
+    elif operator == "*":
+       print("Multi:-", a * b)
+  
+    elif operator == "/":
+       if b != 0:
+          print("Div:-", a / b)
+ 
+       else:
+          print("Error: Division by zero is not allowed.")
+
+    else:
+       print("Invalid Operator!")
+
+    ans = input("\nDo you want to calculate again?(y/n):")
+
+print("Program End!")
