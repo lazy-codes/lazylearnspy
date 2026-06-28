@@ -1,0 +1,25 @@
+#basic calculator
+
+a = float(input("Your 1st digit: "))
+b = float(input("Your 2ns digit: "))
+
+operator = input("Choose your operator( +, -, * or / ): ")
+
+if operator in ["+", "-", "*", "/"]:
+    print("Sucessful")
+
+else:
+    print("Fail")
+
+if operator == "+":
+    print("add: ", a + b)
+
+elif operator == "-":
+    print("sub: ", a - b)
+
+elif operator == "*":
+    print("multi: ", a * b)
+
+elif operator == "/":
+    print("div: ", a / b)
+

@@ -1,0 +1,26 @@
+#arithmetic task
+import random
+
+name = input("What's your name?")
+print(f"Hello, {name}! Welcome")
+
+task = input("What's the task for today? (Arithmetic calculation Or Arithmetic quiz) ")
+
+if task.lower() == "arithmetic calculation":
+    print("Enter your numbers here.")
+
+    while True:
+     a = float(input("Your 1st digit: "))
+     b = float(input("Your 2nd digit: "))
+     print("add: ", a + b)
+     print("sub: ", a - b)
+     print("multi: ", a * b)
+     print("div: ", a / b)
+    
+     again = input("You want to continue? (Yes / No) ")
+     if again != "Yes":
+      print("Program End!")
+      break
+
+elif task.lower() == "arithmetic quiz":
+
